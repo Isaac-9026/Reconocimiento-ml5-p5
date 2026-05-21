@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reconocimiento de Imágenes</title>
+
+    <!-- P5.js facilita la gestión de canvas, sonido, cámara, video -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.13/lib/p5.min.js"></script>
+
+    <!-- ML5.js (ML) Última versión -->
+    <script src="https://unpkg.com/ml5@1/dist/ml5.min.js"></script>
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h2>Reconocimiento de Imágenes</h2>
+
+    <label for="image-selector">Seleccionar imagen:</label>
+    <select id="image-selector">
+      <option value="images/animal01.jpg">Animal 1</option>
+      <option value="images/animal02.jpg">Animal 2</option>
+      <option value="images/animal03.jpg">Animal 3</option>
+    </select>
+
+    <div id="canvas-container"></div>
+
+    <div id="results">
+      <div class="result-category" id="category">-</div>
+      <div class="result-percentage" id="percentage">-</div>
+    </div>
+
+    <script src="js/sketch.js"></script>
+  </body>
+</html>
